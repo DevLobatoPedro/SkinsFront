@@ -1,0 +1,139 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Mono:wght@100&family=Pangolin&family=Shadows+Into+Light&display=swap');
+html{
+font-family: 'Fjalla One', sans-serif;
+font-family: 'IBM Plex Mono', monospace;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Pangolin', cursive;
+}
+
+#copywriting{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+body{
+  background-image:linear-gradient(#341931,#571B3C,#341931  ) ;
+  background-size: 100vw 100vh;
+}
+
+header .top{
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#icon-car-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+header #icon-car-text #car{
+  font-size: 20px;
+  border: 2px solid ;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+header #carrinho a{
+  font-size: 12px;
+  font-family: 'Pangolin', cursive;
+}
+header .login-button{
+background-color: white;
+border-radius: 2px 5px 5px 4px;
+font-family: 'Fjalla One', sans-serif;
+width: 75px;
+height: 50px;
+}
+header .pesq{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .pesq .search-bar{
+  border: 2px solid white;
+  border-radius:  7px 5px 5px 2px ;
+  background-color: transparent;
+  text-align: center;
+}
+
+.center .row{
+  margin-top: 50px;
+  display: grid;
+  margin-left: 30px;
+  grid-template-columns:1fr 1fr;
+  column-gap: 70px;
+}
+
+.center .row .bar-text{
+  display: flex;
+}
+.center .row #bars{
+  font-size: 30px;
+  color: white;
+}
+.center .row .bar-text #icon-bars-text{
+  margin-top: 5px;
+  margin-left: 20px;
+  font-size: 15px;
+  color: white;
+  font-weight: bold
+  
+}
+
+.center .row #ver-mais{
+  font-weight: inherit;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+}
+
+  .images ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        padding: 0;
+    }
+    .images li {
+      width:33%;
+      box-sizing: border-box;
+    }
+
+    .images img {
+      width: 100%;
+      height: auto;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      border: 2px solid;
+      
+    }
+    .images figure {
+      position: relative;
+      margin-left: 25px;
+      margin-right: 20px;
+      margin-bottom: 50px;
+      margin-top: 20px;
+
+    }
+
+    /*
+    lux skin portrait
+    */
+
+
+
+
+
