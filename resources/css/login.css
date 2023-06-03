@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+html{
+    font-family: 'Press Start 2P', cursive;
+}
+ body{
+    background-image:linear-gradient(#341931,#571B3C,#341931  ) ;
+    background-size: 100vw 100vh;
+ }
+
+.top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .top-text {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+}
+  
+  .bar {
+    width: 200px;
+    margin-top: 10px;
+    height: 5px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 100px;
+}
+.center .vertical-box #user-icon{
+    font-size: 100px;
+}
+
+.vertical-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    background-color: #d9d9d955;
+    padding: 20px;
+    border: 5px solid #0E538C;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .vertical-box p {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-size: 25px;
+  }
+  
+  .text-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    margin-top: 25px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .center .vertical-box #enter:disabled{
+    cursor: auto;
+    background-color: rgba(0, 0, 255, 0.332);
+  }
+  
+  footer{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+  }
+
+  footer button{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
