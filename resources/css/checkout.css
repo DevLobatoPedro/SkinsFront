@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Mono:wght@100&family=Pangolin&family=Shadows+Into+Light&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+  html{
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Pangolin', cursive;
+    font-family: 'Press Start 2P', cursive;
+  }
+  
+  #copywriting{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+  body{
+    background-image:linear-gradient(#341931,#571B3C,#341931  ) ;
+    background-size: 100vw 100vh;
+  }
+  
+  header .top{
+    width: 100%;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .user{
+    text-align:  center;
+  }
+  
+  #icon-car-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  
+  .user #userIcon{
+    font-size: 30px;
+    color: white;
+  }
+
+  
+  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box {
+    width: 300px;
+    height: 300px;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 150px;
+    background-color:rgba(0, 0, 139, 0) ;
+    border: 2px solid white;
+    
+  }
+  
+  .box h2 {
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  .box p {
+    color: white;
+    margin-bottom: 50px;
+  }
+  
+  .box button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+  }
+  
