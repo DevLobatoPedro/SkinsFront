@@ -67,6 +67,15 @@ header #carrinho a{
   font-family: 'Pangolin', cursive;
 }
 
+#titulo{
+  font-size: 30px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: 'Shadows Into Light', cursive;
+  margin-left:25px ;
+}
+
 .images {
   width: 100%;
   height: auto;
@@ -76,10 +85,18 @@ header #carrinho a{
 
 .images ul {
   list-style: none;
+ 
 }
 
 .images li {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.178);
+    width: 90%;
+    margin-inline: auto;
+    border-radius:20px 20px 20px 0px ;
+    align-items: center;
 }
 
 .individual-image {
@@ -87,14 +104,23 @@ header #carrinho a{
   width: 70px;
   height: 70px; 
   border-radius: 50%; 
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
   overflow: hidden; 
-}
 
+}
 .individual-image img {
   width: 100%;
   height: auto;
   object-fit: cover; 
 }
+.images span{
+  font-size: 12px;
+}
+
 
 footer {
   display: flex;
@@ -104,8 +130,13 @@ footer {
 }
 
 footer button {
+  margin-top: 15px;
   padding: 10px 20px;
   font-size: 16px;
+  border: 2px solid blue;
+  background-color: rgba(240, 248, 255, 0);
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
 }
 
 
