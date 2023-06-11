@@ -27,7 +27,7 @@ header #textTop{
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
   color: white;
 }
 
@@ -40,20 +40,44 @@ header #textTop{
   font-size: 20px;
 }
 
-.form-center{
+.form-center {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   width: 270px;
-  height: 270px;
+  height: 350px;
   background-color: #d9d9d955;
-
   border: 5px solid #0E538C;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  text-align: center;
+  border-radius: 30px 0px 30px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 70px;
 }
 
+.form-input {
+  margin-top: 10px;
+}
 
+.form-center button{
+  margin-top: 7px;
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 15px 0 7px 7px;
+  padding: 7px 12px;
+  background-color: #36D53C;
+  color: white;
+}
 
+.form-center .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7px;
+}
+
+.form-center .check input[type="checkbox"] {
+  margin-right: 5px;
+}

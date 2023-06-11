@@ -121,6 +121,12 @@ header #carrinho a{
   font-size: 12px;
 }
 
+.images p {
+  font-size: 15px;
+  display: flex;
+  text-align: center;
+}
+
 
 footer {
   display: flex;

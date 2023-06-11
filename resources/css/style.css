@@ -15,6 +15,22 @@ html{
   font-family: 'Press Start 2P', cursive;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button{
+  cursor: pointer;
+}
+
+a:focus,
+a:hover {
+  outline: none;
+  color: inherit;
+}
+
 #copywriting{
   font-family: 'Press Start 2P', cursive;
   font-size: 20px;
@@ -40,6 +56,7 @@ header .top{
   flex-direction: column;
   align-items: center;
   color: white;
+  text-align: center;
 }
 
 header #icon-car-text #car{
@@ -49,7 +66,7 @@ header #icon-car-text #car{
   padding: 5px;
 }
 
-header #carrinho a{
+header #carrinho p{
   font-size: 12px;
   font-family: 'Pangolin', cursive;
 }
@@ -102,6 +119,11 @@ header .pesq .search-bar{
   font-size: 13px;
   color: white;
   text-decoration: none;
+}
+
+.center .row #ver-mais:hover {
+  background-color: #0C3866;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
   .images ul {
