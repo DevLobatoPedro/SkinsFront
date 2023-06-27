@@ -6,6 +6,11 @@ const loginButton = document.getElementsByClassName('.login-button')
 function redirectToIndex (){
   window.location.href = 'index.html';
 }
+function redirectToRegister (){
+  window.location.href = 'form.html';
+}
+
+
 
 function validade() {
     if (email.value.trim() !== "" && password.value.trim() !== "") {

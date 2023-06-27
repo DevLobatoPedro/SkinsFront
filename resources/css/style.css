@@ -19,6 +19,7 @@ a {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
+  
 }
 
 button{
@@ -64,30 +65,42 @@ header #icon-car-text #car{
   border: 2px solid ;
   border-radius: 5px;
   padding: 5px;
+  color: white;
 }
 
 header #carrinho p{
   font-size: 12px;
   font-family: 'Pangolin', cursive;
+  color: white;
 }
-header .login-button{
-  background-color: white;
-  border-radius: 2px 5px 5px 4px;
+header .login-button {
+  margin-bottom: 25px;
+  background-color: #e6e6e6;
+  border: none;
+  border-radius: 25px;
   font-family: 'Fjalla One', sans-serif;
-  width: 75px;
-  height: 50px;
+  width: 100px;
+  height: 40px;
+  font-weight: bold;
+  color: #333;
 }
+
+header .login-button:hover {
+  background-color: #ccc;
+}
+
 header .pesq{
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
 }
-header .pesq .search-bar{
+header .pesq .search-bar {
   border: 2px solid white;
-  border-radius:  7px 5px 5px 2px ;
+  border-radius: 7px 5px 5px 2px;
   background-color: transparent;
   text-align: center;
+  width: 400px;
 }
 
 .center .row{
@@ -96,6 +109,8 @@ header .pesq .search-bar{
   margin-left: 30px;
   grid-template-columns:1fr 1fr;
   column-gap: 70px;
+  justify-content: space-between;
+  
 }
 
 .center .row .bar-text{
@@ -115,16 +130,27 @@ header .pesq .search-bar{
 }
 
 .center .row #ver-mais{
+  display: grid;
   font-weight: inherit;
   font-size: 13px;
   color: white;
   text-decoration: none;
+  justify-content: end;
+  margin-right: 25px;
+
 }
 
 .center .row #ver-mais:hover {
   background-color: #0C3866;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
+
+
+#carrosel{
+  display: none;
+}
+
+
 
   .images ul {
         display: flex;
@@ -169,10 +195,52 @@ header .pesq .search-bar{
       color: white;
     }
 
-    /*
-    lux skin portrait
-    */
+    @media (min-width: 768px) {
+      header .pesq .search-bar {
+        width: 700px;
+      }
+      #carrosel{
+        display: block;
+      }
+      .carousel-item img {
+        max-width: 100%;
+        max-height: 500px; /* Defina a altura desejada para as imagens */
+      }
+      #imgs{
+        display: none;
+      }
+    }
 
+  
+    @media (min-width: 1200px){
+      #carrosel{
+        display: block;
+      }
+      header .pesq .search-bar {
+        width: 1200px;
+      }
+
+      .carousel-item img {
+        max-width: 100%;
+        max-height: 600px; /* Defina a altura desejada para as imagens */
+      }
+      .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.7); 
+        color: #fff; 
+        padding: 10px; 
+      }
+      .carousel-caption h5 {
+        font-size: 18px; /* Tamanho da fonte do título da legenda */
+      }
+      
+      .carousel-caption p {
+        font-size: 14px; /* Tamanho da fonte do conteúdo da legenda */
+      }
+
+      #imgs{
+        display: none;
+      }
+    }
 
 
 

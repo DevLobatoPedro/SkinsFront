@@ -13,16 +13,13 @@ html{
 body{
   background-image:linear-gradient(#341931,#571B3C,#341931  ) ;
   background-size: 100vw 100vh;
+
+}
+button{
+  cursor: pointer;
 }
 
-
-header #textTop{
- text-align: center;
- color: white;
- margin-top: 25px;
- font-size: 25px;
-}
-.icon {
+header.icon {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,13 +28,25 @@ header #textTop{
   color: white;
 }
 
-#user-icon {
+header #user-icon {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.icon p{
+header.icon p {
   font-size: 20px;
+}
+
+
+.container {
+  text-align: center;
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
 }
 
 .form-center {
@@ -46,38 +55,86 @@ header #textTop{
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 270px;
-  height: 350px;
+  width: 300px;
+  height: auto;
   background-color: #d9d9d955;
   border: 5px solid #0E538C;
-  border-radius: 30px 0px 30px 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  margin-top: 70px;
+  border-radius: 30px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 150px;
 }
 
 .form-input {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.form-center button{
-  margin-top: 7px;
-  border: 1px solid rgba(255, 255, 255, 0);
-  border-radius: 15px 0 7px 7px;
-  padding: 7px 12px;
+.form-input p {
+  font-weight: bold;
+}
+
+.form-input input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-input:invalid input {
+  border: 2px solid red;
+}
+
+.form-center button {
+  margin-top: 20px;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
   background-color: #36D53C;
   color: white;
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .form-center .check {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 .form-center .check input[type="checkbox"] {
   margin-right: 5px;
 }
+
+
+@media  (min-width: 768px) {
+  .form-center {
+    width: 700px;
+    height: auto;
+
+  }
+  .form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px;
+  }
+}   
+
+@media  (min-width: 1200px) {
+  .form-center {
+    width: 900px;
+    height: auto;
+
+  }
+  .form-input input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 700px;
+  }
+}  
+
+

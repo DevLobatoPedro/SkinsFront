@@ -8,15 +8,17 @@
   <link rel="stylesheet" href="/resources/css/style.css">
   <script src="https://kit.fontawesome.com/0aef580cf3.js" crossorigin="anonymous"></script>
   <script src="js/index.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Skins Avenida</title>
 </head>
 <body>
 <header>
   <nav class="top">
     <div id="icon-car-text">
-      <a href="shoppingCart.html" style="text-decoration: none;">
+      <a class="small-car" href="shoppingCart.html" style="text-decoration: none;">
         <i id="car" class="fa-solid fa-cart-shopping"></i>  
-      <p>Carrinho</p> 
+      <p style="color: white;">Carrinho</p> 
     </a>
   </div>
     <p id="copywriting">  Skins <br> Avenida</p>
@@ -29,65 +31,116 @@
 </header>
 <section class="center">
   <div class="row" >
-    <div class="col span-1-of-2">
+    <div class="col span-1-of-2 left-column">
       <div class="bar-text">
         <i class="fa-solid fa-bars-progress" id="bars"></i>
         <p id="icon-bars-text">DEPARTAMENTOS</p>
       </div>
     </div>
-    <div class="col span-1-of-2">
-     <a id="ver-mais" href="">ver mais ></a>
+    <div class="col span-1-of-2 right-column">
+     <a id="ver-mais" href="" style=" margin-left: auto;">ver mais</a>
       </div>
   </div>
 
-  <div class="images">
+  <div id="carrosel" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carrosel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carrosel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carrosel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Carrossel1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ekko, o Rapaz que Estilhaçou o Tempo</h5>
+          <p>Temos todas as skins do ekko no catalogo</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Carrossel2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>a Raposa de Nove Caudas Ahri </h5>
+          <p>Temos todas as skins da Ahri no catalogo</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/Carrossel3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Skins no Smite</h5>
+          <p>Temos as mais diversas skins do jogo smite em nosso catalogo</p>
+        </div>
+        
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carrosel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carrosel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="images" id="imgs">
     <ul>
       <li>
         <figure class="individual-image">
-         <span>LOLZINHO</span>
-          <img src="img/1.png" alt="">
+          <a href="">
+            <span>Lux(LoL)</span>
+            <img src="img/1.png" alt="">
+          </a>
         </figure>
       </li>
       <li>
         <figure class="individual-image">
-          <span>LOLZINHO</span>
-          <img src="img/1.png" alt="">
+          <a href="">
+            <span>Sona(LoL)</span>
+            <img src="img/2.jpg" alt="">
+          </a>
         </figure>
       </li>
       <li>
         <figure class="individual-image">
-          <span>LOLZINHO</span>
-          <img src="img/1.png" alt="">
+          <a href="">
+            <span>Caitlyn(LoL)</span>
+            <img src="img/3.jpg" alt="">
+          </a>
         </figure>
       </li>
       <li>
         <figure class="individual-image">
-          <span>LOLZINHO</span>
-          <img src="img/1.png" alt="">
+          <a href="">
+            <span>Athena(Smite)</span>
+            <img src="img/4.jpg" alt="">
+          </a>
         </figure>
       </li>
       <li>
         <figure class="individual-image">
-          <span>LOLZINHO</span>
-          <img src="img/1.png" alt="">
+          <a href="">
+            <span>Loki(Smite)</span>
+            <img src="img/5.jpg" alt="">
+          </a>
         </figure>
       </li>
       <li>
         <figure class="individual-image">
-          <span>LOLZINHO</span>
-          <img src="img/1.png" alt="">
+          <a href="">
+            <span>Susano(Smite)</span>
+            <img src="img/6.png" alt="">
+          </a>
         </figure>
       </li>
     </ul>
+  </div>
+  
 
   </div>
 
 
 </section>
 
-<footer>
-  <a href="" >voltar</a>
-</footer>
 </body>
 </html>
 

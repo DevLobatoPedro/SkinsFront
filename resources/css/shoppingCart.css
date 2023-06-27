@@ -125,6 +125,9 @@ header #carrinho a{
   font-size: 15px;
   display: flex;
   text-align: center;
+  margin-right: 8px;
+  margin-left: auto;
+  padding: 35px;
 }
 
 
@@ -146,7 +149,10 @@ footer button {
 }
 
 
+@media (min-width: 1200px){
 
+
+}
 
 
 

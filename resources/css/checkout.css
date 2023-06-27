@@ -44,6 +44,7 @@
     align-items: center;
     color: white;
     text-align: center;
+    text-decoration: none;
   }
   
   header #icon-car-text #car{
@@ -51,11 +52,13 @@
     border: 2px solid ;
     border-radius: 5px;
     padding: 5px;
+    text-decoration: none; 
   }
   
   header #carrinho p{
     font-size: 12px;
     font-family: 'Pangolin', cursive;
+    text-decoration: none;
   }
   
   .user #userIcon{
@@ -102,5 +105,117 @@
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
+  
+  }
+
+  .box button:hover {
+    background-color: #45a049;
+  }
+  
+  @media (min-width: 756px) {
+    header .top {
+      padding: 20px 50px;
+    }
+  
+    header #icon-car-text #car {
+      padding: 15px;
+    }
+  
+    header #carrinho p {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  
+    .box {
+      width: 500px;
+      height: 400px;
+      margin-top: 70px;
+      margin-bottom: 50px;
+    }
+  
+    .box h2 {
+      font-size: 30px;
+      margin-bottom: 100px;
+    }
+  
+    .box p {
+      font-size: 25px;
+      margin-bottom: 100px;
+    }
+  
+    .box button {
+      padding: 17px 27px;
+    }
+
+
+    header #carrinho p{
+      font-size:70px;
+      font-family: 'Pangolin', cursive;
+    }
+    
+    .user #userIcon{
+      font-size: 50px;
+      color: white;
+    }
+    header #icon-car-text #car {
+      padding: 15px;
+      font-size: 25px;
+    }
+
+  }
+  
+  @media (min-width: 1200px) {
+    header .top {
+      padding: 30px 100px;
+    }
+  
+    header #icon-car-text #car {
+      padding: 20px;
+    }
+  
+    header #carrinho p {
+      font-size: 20px;
+      margin-left: 20px;
+    }
+    #copywriting{
+      font-size: 35px;
+    }
+  
+    .box {
+      width: 600px;
+      height: 500px;
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+  
+    .box h2 {
+      font-size: 35px;
+      margin-bottom: 130px;
+    }
+  
+    .box p {
+      font-size: 22px;
+      margin-bottom: 100px;
+    }
+  
+    .box button {
+      padding: 17px 30px;
+      margin-top: 65px;
+      font-size: 20px;
+    }
+    header #carrinho p{
+      font-size:90px;
+      font-family: 'Pangolin', cursive;
+    }
+    
+    .user #userIcon{
+      font-size: 60px;
+      color: white;
+    }
+    header #icon-car-text #car {
+      padding: 15px;
+      font-size: 35px;
+    }
+
   }
   

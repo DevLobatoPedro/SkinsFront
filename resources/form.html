@@ -7,45 +7,49 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="../vendors/css/normalize.css">
     <script src="https://kit.fontawesome.com/0aef580cf3.js" crossorigin="anonymous"></script>
+    <script src="js/form.js"></script>
 
     <title>Document</title>
 </head>
-<body>
-<header>
-  <p id="textTop">Sessão <br> De <br>Cadastro </p>
-</header>      
-<section class="icon">
+<body>    
+<header class="icon">
+  
   <i id="user-icon" class="fa-solid fa-user"></i>
   <p>Cadastro de usuario</p>
-</section>
-<section class="form-center">
-<div class="form-input">
-<p>Nome</p>
-<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-</div>
+</header>
+
+<div class="form-container">
+<from class="form-center">
+  <div class="form-input">
+  <p>Nome</p>
+  <input type="text" name="nome" id="name" placeholder="Digite seu nome" class="inputs required" oninput="confirmForm()">
+  </div>
 <div class="form-input">
 <p>Email</p>
-<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+<input type="text" name="nome" id="email" placeholder="Digite seu nome" class="inputs required">
 </div>
 <div class="form-input">
 <p>CPF</p>
-<input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+<input type="text" name="nome" id="cpf" placeholder="Digite seu nome" class="inputs required">
 </div>
 <div class="form-input">
 <p>Senha</p>
-<input type="password" name="nome" id="nome" placeholder="Digite seu nome">
+<input type="password" name="nome" id="password" placeholder="Digite seu nome" class="inputs required">
 </div>
 <div class="form-input">
   <p>Repita sua senha</p>
-  <input type="password" name="nome" id="nome" placeholder="Digite seu nome">
+  <input type="password" name="nome" id="confirmPassword" placeholder="Digite seu nome" class="inputs required">
+  
   </div>
   <div class="check">
-    <input type="checkbox"><p style="font-size: 17px;">Aceito os <a href="" style="color: blue;">termos de uso</a></p>
+    <input type="checkbox" id="checkbox"><p style="font-size: 17px;">Aceito os <a href="" style="color: blue;">termos de uso</a></p>
   </div>
   <div>
     
-  <button id="btn">Finalizar cadastro</button>
+  <button type="submit" id="btn" onclick="redirectToIndex()">Finalizar cadastro</button>
 </div>
-</section>
+</div>
+</form>
+
 </body>
 </html>

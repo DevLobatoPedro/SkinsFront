@@ -106,3 +106,32 @@ html{
     border: none;
     cursor: pointer;
   }
+
+ 
+/* Estilos para telas desktop */
+
+@media screen and (min-width: 768px) {
+  .vertical-box {
+
+    width: 700px;
+    height: 525px;
+    padding: 20px;
+  }
+  .button {
+    padding: 10px 20px;
+    margin-top: 30px;
+
+  }
+ 
+
+}
+
+@media screen and (min-width: 1200px) {
+  .vertical-box {
+
+    width: 900px;
+    height: 500px;
+    padding: 20px;
+  }
+
+}
